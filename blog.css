@@ -1,0 +1,158 @@
+body {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-image: url('https://blog.html/images/ene.jpg');
+  background-repeat: repeat;
+  background-color: #343a40;
+}
+
+body::before {
+  position: fixed;
+  top: 0;
+  content: '';
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkgray);
+  background-image: linear-gradient(
+      115deg,
+      rgba(235, 237, 240, 0.411),
+      rgba(238, 236, 238, 0.678)
+    ),
+    url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.jumbotron {
+  background: url('/Home/images/ene.jpg') no-repeat fixed;
+  height: 20vh;
+}
+
+ .jumbotron{
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.1);
+    height: 20vh;
+    background-size: cover;
+ }
+
+
+
+
+
+
+ 
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+#pricing {
+  flex-direction: column;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+a {
+  color: rgb(182, 63, 63);
+  text-decoration: none;
+}
+
+.level {
+  background-color: rgb(94, 89, 89);
+  color: rgb(238, 235, 235);
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+* {
+  box-sizing: border-box;    
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+li {
+  list-style: none;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #6debf0;
+  font-weight: 400;
+}
+
+
+/* Contacts */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: #303841;
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
